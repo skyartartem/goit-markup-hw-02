@@ -1,0 +1,33 @@
+/* встановлює глобальні змінні кольори */
+:root {
+  --main-bgrnd-color: #ffffff;
+  --acsent-color: #2196f3;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+}
+/* Приберає підкреслення з лінків*/
+a {
+  text-decoration: none;
+}
+
+/* Встановлює */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  background-color: var(--main-bgrnd-color);
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo .acsent {
+  color: var(--acsent-color);
+}
