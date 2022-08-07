@@ -21,7 +21,7 @@ body {
   color: var(--primary-text-color);
   background-color: var(--main-bgrnd-color);
 }
-
+/* Фарбування логотипу */
 .logo {
   font-family: "Raleway";
   font-style: normal;
@@ -31,14 +31,23 @@ body {
   letter-spacing: 0.03em;
   }
 
-.logo .accent {
+ .logo>.accent {
   color: var(--accent-color);
 }
-.logo .color-black {
+.logo>.color-black {
   color: #000000;
-
 }
-.color-white {
+
+.navigation-item {
+    color: var(--secondary-text-color);
+}
+.navigation-item:hover,
+.navigation-item:focus
+ {
+    color: var(--accent-color);
+}
+
+.logo>.color-white {
   color: var(--main-bgrnd-color);
 }
 
