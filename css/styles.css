@@ -81,7 +81,7 @@ text-transform: uppercase;
     padding: 10px 32px;
     border-radius: 4px;
 }
-
+h2,h3,h4 {color: var(--secondary-text-color);}
 
 .logo .color-white {
   color: var(--main-bgrnd-color);
@@ -90,3 +90,6 @@ text-transform: uppercase;
 .footer {
     background-color: #2F303A;
 }
+.accent-color {color: var(--accent-color);}
+.color-white {color: var(--main-bgrnd-color);}
+.color-second {color: var(--primary-text-color);}
