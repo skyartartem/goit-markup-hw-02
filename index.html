@@ -5,41 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Підключення css стиля -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Капелюх -->
     <header>
       <nav>
-        <a class="logo" href="./"> <span class="accent">Web</span><span class="color-black">Studio</span></a>
-
-        <ul>
-          <li><a class="navigation-item" href="./">Студія</a></li>
-          <li><a class="navigation-item" href="./">Портфоліо</a></li>
-          <li><a class="navigation-item" href="./">Контакти</a></li>
+        <!-- Логотип чорний -->
+        <a class="logo links" href="./index.html"
+          ><span class="accent">Web</span
+          ><span class="color-black">Studio</span></a
+        >
+        <!-- Навігація -->
+        <ul class="list">
+          <li><a class="navigation-item links" href="./">Студія</a></li>
+          <li><a class="navigation-item links" href="./">Портфоліо</a></li>
+          <li><a class="navigation-item links" href="./">Контакти</a></li>
         </ul>
-
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <!-- Контакти в капелюсі чомусь окремо від навігаціі -->
+      <ul class="list">
         <li>
-          <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+          <a class="header-contact links" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a
+            class="header-contact links"
+            href="tel:+380961111111"
+            class="contact-link"
+            >+38 096 111 11 11</a
+          >
         </li>
       </ul>
     </header>
 
     <main>
+
       <!-- Герой -->
-      <section>
-        <h1>Ефективні рішення для <br />вашого бізнесу</h1>
+      <section class="hero">
+        <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
         <!-- <a href="">Замовити послугу</a> -->
-        <button type="button">Замовити послугу</button>
+        <button class="hero-button" type="button">Замовити послугу</button>
       </section>
+
       <!-- Переваги -->
       <section>
         <h2>Наші переваги</h2>
@@ -134,7 +154,10 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-      <a class="logo" href="./"> <span class="accent">Web</span><span class="color-white">Studio</span></a>
+      <a class="logo links" href="./">
+        <span class="accent">Web</span
+        ><span class="color-white">Studio</span></a
+      >
       <address>
         <ul>
           <li>

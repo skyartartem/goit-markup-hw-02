@@ -5,23 +5,26 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
 }
-/* Приберає підкреслення з лінків*/
-a {
-  text-decoration: none;
-}
-/* Приберає крапки в списках */
-ul {
-  list-style: none;
-}
 
-/* Встановлює */
+
+/* Встановлює глобальні параметри на всю сторінку*/
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  font-style: normal;
   color: var(--primary-text-color);
   background-color: var(--main-bgrnd-color);
 }
-/* Фарбування логотипу */
+/* Приберає підкреслення з лінків*/
+.links {
+  text-decoration: none;
+}
+/* Приберає крапки в списках */
+.list {
+  list-style: none;
+}
+
+/* Стилізування логотипу */
 .logo {
   font-family: "Raleway";
   font-style: normal;
@@ -30,14 +33,13 @@ body {
   line-height: 31px;
   letter-spacing: 0.03em;
   }
-
- .logo>.accent {
+ .logo .accent {
   color: var(--accent-color);
 }
-.logo>.color-black {
+.logo .color-black {
   color: #000000;
 }
-
+/* Стилізація навігації */
 .navigation-item {
     color: var(--secondary-text-color);
 }
@@ -45,9 +47,43 @@ body {
 .navigation-item:focus
  {
     color: var(--accent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Стилізація контактів в капелюсі */
+.header-contact {
+color: var(--primary-text-color);    
+}
+.header-contact:hover,
+.header-contact:focus
+ {
+color: var(--accent-color); 
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+}
+/* Стилізація героя */
+.hero {
+background-color: #2F303A;
+color: var(--main-bgrnd-color);
+    }
+.hero-title {
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}    
+.hero-button {
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--main-bgrnd-color);
+    padding: 10px 32px;
+    border-radius: 4px;
 }
 
-.logo>.color-white {
+
+.logo .color-white {
   color: var(--main-bgrnd-color);
 }
 
