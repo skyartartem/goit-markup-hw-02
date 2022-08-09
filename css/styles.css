@@ -4,17 +4,22 @@
   --accent-color: #2196f3;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
+  --text-color-on-drk-bgrd:#ffffff;
+  --drk-bgrd-color: #2F303A;
 }
-
 
 /* Встановлює глобальні параметри на всю сторінку*/
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-style: normal;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--main-bgrnd-color);
 }
+
 /* Приберає підкреслення з лінків*/
 .links {
   text-decoration: none;
@@ -24,7 +29,7 @@ body {
   list-style: none;
 }
 
-/* Стилізування логотипу */
+/* Стилізування логотипу капелюха */
 .logo {
   font-family: "Raleway";
   font-style: normal;
@@ -32,26 +37,43 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  }
- .logo .accent {
   color: var(--accent-color);
+  }
+
+.logo.black {
+  color: var(--secondary-text-color);
 }
-.logo .color-black {
-  color: #000000;
-}
+
 /* Стилізація навігації */
-.navigation-item {
-    color: var(--secondary-text-color);
+.site-nav .links {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--secondary-text-color);
 }
-.navigation-item:hover,
-.navigation-item:focus
+.site-nav .links.current {
+    color: var(--accent-color);
+}
+.site-nav .links:hover,
+.site-nav .links:focus
  {
     color: var(--accent-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
 /* Стилізація контактів в капелюсі */
 .header-contact {
-color: var(--primary-text-color);    
+color: var(--primary-text-color); 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;   
 }
 .header-contact:hover,
 .header-contact:focus
@@ -59,10 +81,12 @@ color: var(--primary-text-color);
 color: var(--accent-color); 
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
 }
-/* Стилізація героя */
+
+/* Стилізація секції -герой- */
+
 .hero {
-background-color: #2F303A;
-color: var(--main-bgrnd-color);
+background-color: var(--drk-bgrd-color);
+color: var(--text-color-on-drk-bgrd);
     }
 .hero-title {
 font-style: normal;
@@ -77,19 +101,46 @@ text-transform: uppercase;
     font-size: 16px;
     text-align: center;
     background-color: var(--accent-color);
-    color: var(--main-bgrnd-color);
+    color: var(--text-color-on-drk-bgrd);
     padding: 10px 32px;
-    border-radius: 4px;
+    border-radius: 4px;     
 }
-h2,h3,h4 {color: var(--secondary-text-color);}
+/* встановлення ховера для кнопки форми чомусь не працює */
+/* .hero-buton:hover {
+    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.43));
+} */
 
-.logo .color-white {
-  color: var(--main-bgrnd-color);
+/* Стилізуємо секцію -переваги- */
+
+.sec-benefits > .title-benefits {color: transparent;}
+.sec-benefits .title-item {color: var(--secondary-text-color);}
+
+/* Стилізуємо секцию -що ми робимо- */
+
+.sec-what .title {
+    color: var(--secondary-text-color);
 }
 
+/* Стилізуємо секцію -команда- */
+.sec-team {background-color: 
+#F5F4FA;}
+.sec-team .title {
+    color: var(--secondary-text-color);
+}
+.sec-team .name-position {color: var(--secondary-text-color);}
+.position-card {background-color: var(--main-bgrnd-color);}
+
+/* Доповнює стилізацію нижнього логотипа */
+
+.logo.white {
+  color: var(--text-color-on-drk-bgrd);
+}
+
+/* Стилізация футера */
 .footer {
-    background-color: #2F303A;
+    background-color: var(--drk-bgrd-color);
 }
-.accent-color {color: var(--accent-color);}
-.color-white {color: var(--main-bgrnd-color);}
-.color-second {color: var(--primary-text-color);}
+/* .accent-color {color: var(--accent-color);} */
+.address {color: var(--text-color-on-drk-bgrd);}
+.mail {color: var(--primary-text-color);}
+.tel {color: var(--primary-text-color);}
