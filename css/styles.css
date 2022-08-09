@@ -98,37 +98,85 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 }    
 .hero-button {
+    border: none;
     font-size: 16px;
     text-align: center;
     background-color: var(--accent-color);
     color: var(--text-color-on-drk-bgrd);
     padding: 10px 32px;
-    border-radius: 4px;     
+    border-radius: 4px; 
+    cursor: pointer;    
 }
-/* встановлення ховера для кнопки форми чомусь не працює */
-/* .hero-buton:hover {
+/* встановлення ховера для кнопки форми */
+.hero-button:hover {
+    transform: translate(1px,-1px);
     filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.43));
-} */
+}
 
 /* Стилізуємо секцію -переваги- */
 
 .sec-benefits > .title-benefits {color: transparent;}
-.sec-benefits .title-item {color: var(--secondary-text-color);}
+.sec-benefits .title-item {
+color: var(--secondary-text-color);
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
 
-/* Стилізуємо секцию -що ми робимо- */
+/* Стилізуємо секцию -чим ми займаэмося- */
 
 .sec-what .title {
-    color: var(--secondary-text-color);
+color: var(--secondary-text-color);
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.list.box {
+    display: flex;
 }
 
 /* Стилізуємо секцію -команда- */
-.sec-team {background-color: 
-#F5F4FA;}
-.sec-team .title {
-    color: var(--secondary-text-color);
+
+.sec-team {
+background-color:#F5F4FA;
 }
-.sec-team .name-position {color: var(--secondary-text-color);}
+.sec-team .title {
+color: var(--secondary-text-color);
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+}
 .position-card {background-color: var(--main-bgrnd-color);}
+
+.list.team {
+    display: flex;
+}
+
+.sec-team .name-position {
+color: var(--secondary-text-color);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.187;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.sec-team .position {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.187;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
 
 /* Доповнює стилізацію нижнього логотипа */
 
@@ -137,10 +185,44 @@ text-transform: uppercase;
 }
 
 /* Стилізация футера */
+
 .footer {
     background-color: var(--drk-bgrd-color);
 }
-/* .accent-color {color: var(--accent-color);} */
-.address {color: var(--text-color-on-drk-bgrd);}
+
+.adrs {color: var(--text-color-on-drk-bgrd);}
+.adrs:hover, .adrs:focus {color: var(--accent-color);}
+
 .mail {color: var(--primary-text-color);}
+.mail:hover, .mail:focus {color: var(--accent-color);}
+
 .tel {color: var(--primary-text-color);}
+.tel:hover, .tel:focus   {color: var(--accent-color);}
+
+/* стилізація сторінки -портфоліо- */
+
+.portfolio-title {color: transparent;}
+.categories {
+    display: flex;
+}
+.categories-but {
+border: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--secondary-text-color);
+background : #F5F4FA;
+border-radius: 4px;
+padding: 6px 22px;
+cursor: pointer; }
+
+.categories-but:hover,
+.categories-but:focus {
+ color: var(--text-color-on-drk-bgrd);
+background : var(--accent-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
+}
