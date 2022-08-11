@@ -114,7 +114,7 @@ img {display: block;}
   }
 
 .sec-benefits > .title-benefits {
-  color: transparent;
+  display: none;
 }
 .sec-benefits .title-item {
   color: var(--secondary-text-color);
@@ -224,7 +224,7 @@ img {display: block;}
 /* стилізація сторінки -портфоліо- */
 
 .portfolio-title {
-  color: transparent;
+  display: none;
 }
 
 /* Стилізація кнопок вибору категорії */
