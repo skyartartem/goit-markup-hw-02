@@ -28,6 +28,8 @@ body {
 .list {
   list-style: none;
 }
+/* Приберає margin знизу картинки */
+img {display: block;}
 
 /* Стилізування логотипу капелюха */
 .logo {
