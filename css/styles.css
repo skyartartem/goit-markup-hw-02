@@ -21,17 +21,24 @@ body {
 }
 
 /* Приберає підкреслення з лінків*/
+
 .links {
   text-decoration: none;
 }
 /* Приберає крапки в списках */
+
 .list {
   list-style: none;
 }
+
 /* Приберає margin знизу картинки */
-img {display: block;}
+
+img {
+  display: block;
+}
 
 /* Стилізування логотипу капелюха */
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -45,7 +52,8 @@ img {display: block;}
   color: var(--secondary-text-color);
 }
 
-/* Стилізація навігації */
+/* ======== Стилізація навігації ======== */
+
 .site-nav .links {
   font-weight: 500;
   line-height: 1.14;
@@ -62,6 +70,7 @@ img {display: block;}
 }
 
 /* Стилізація контактів в капелюсі */
+
 .header-contact {
   font-weight: 500;
   line-height: 1.14;
@@ -102,6 +111,7 @@ img {display: block;}
   cursor: pointer;
 }
 /* встановлення ховера для кнопки форми */
+
 .hero-button:hover {
   transform: translate(-1px, -1px);
   filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.43));
@@ -111,7 +121,7 @@ img {display: block;}
 
 .list.benefits {
   display: flex;
-  }
+}
 
 .sec-benefits > .title-benefits {
   display: none;
@@ -124,7 +134,9 @@ img {display: block;}
   text-transform: uppercase;
 }
 
-.benefits-card {margin: 15px;}
+.benefits-card {
+  margin: 15px;
+}
 
 /* Стилізуємо секцию -чим ми займаэмося- */
 
@@ -138,12 +150,11 @@ img {display: block;}
 .list.box {
   display: flex;
 }
-.list.box>.photo {
-    margin: 15px;
+.list.box > .photo {
+  margin: 15px;
 }
 
-
-/* Стилізуємо секцію -команда- */
+/* ====== Стилізуємо секцію -команда- ====== */
 
 .sec-team {
   background-color: #f5f4fa;
@@ -165,8 +176,8 @@ img {display: block;}
 .list.team {
   display: flex;
 }
-.list.team>.position-card {
-    margin: 15px;
+.list.team > .position-card {
+  margin: 15px;
 }
 
 .sec-team .name-position {
@@ -188,7 +199,7 @@ img {display: block;}
   color: var(--text-color-on-drk-bgrd);
 }
 
-/* Стилізация футера */
+/* ======= Стилізация футера =========== */
 
 .footer {
   background-color: var(--drk-bgrd-color);
@@ -233,7 +244,7 @@ img {display: block;}
   display: flex;
 }
 .categories-but {
-    margin: 4px;
+  margin: 4px;
   border: none;
   font-family: inherit;
   font-weight: 500;
@@ -255,7 +266,7 @@ img {display: block;}
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Стилізація галереї */
+/* ========= Стилізація галереї ========== */
 
 .list.project {
   display: flex;
