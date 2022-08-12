@@ -11,8 +11,6 @@
 /* Встановлює глобальні параметри на всю сторінку*/
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -128,7 +126,6 @@ img {
 }
 .sec-benefits .title-item {
   color: var(--secondary-text-color);
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -140,9 +137,10 @@ img {
 
 /* Стилізуємо секцию -чим ми займаэмося- */
 
-.sec-what .title {
+.sec-what .title,
+.sec-team .title 
+{
   color: var(--secondary-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
@@ -159,13 +157,7 @@ img {
 .sec-team {
   background-color: #f5f4fa;
 }
-.sec-team .title {
-  color: var(--secondary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-}
+
 .position-card {
   background-color: var(--main-bgrnd-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -211,7 +203,7 @@ img {
 }
 .adrs:hover,
 .adrs:focus {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
 }
 
 .mail {
@@ -220,7 +212,7 @@ img {
 }
 .mail:hover,
 .mail:focus {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
 }
 
 .tel {
@@ -229,7 +221,7 @@ img {
 }
 .tel:hover,
 .tel:focus {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
 }
 
 /* стилізація сторінки -портфоліо- */
@@ -258,6 +250,11 @@ img {
   cursor: pointer;
 }
 
+.categories-but.current {
+  color: var(--text-color-on-drk-bgrd);
+  background-color: var(--accent-color);
+}
+
 .categories-but:hover,
 .categories-but:focus {
   color: var(--text-color-on-drk-bgrd);
@@ -272,6 +269,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
 .project-card {
   border: 1px solid #eeeeee;
   margin: 15px;
@@ -285,8 +283,6 @@ img {
 }
 
 .project-card .project {
-  color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 }
