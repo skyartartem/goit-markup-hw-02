@@ -126,7 +126,7 @@ img {
 }
 .sec-benefits .title-item {
   color: var(--secondary-text-color);
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.14;
   text-transform: uppercase;
 }
